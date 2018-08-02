@@ -1,0 +1,14 @@
+<?php
+
+
+
+$hours = rand(0,23);
+$minutes = rand(0,59);
+$seconds = rand(0,59);
+
+echo $hours . ':' . $minutes . ':' . $seconds;
+
+if($hours >= 0 && $hours <=  11) {
+    echo ' AM';
+
+} else echo ' PM';
