@@ -1,0 +1,16 @@
+<?php
+
+$number1= rand(0, 2);
+$number2 = rand(0, 2);
+$number3 = rand(0, 2);
+$number4 = rand(0, 2);
+$numbers = $number1. $number2 . $number3. $number4;
+
+$count0 = substr_count($numbers, 0);
+$count1 = substr_count($numbers, 1);
+$count2 = substr_count($numbers, 2);
+
+echo 'sugerneruoti skaiciai: ' . $numbers. '<br>';
+echo ' Numerio 0 yra: ' . $count0. '<br>';
+echo ' Numerio 1 yra: ' . $count1. '<br>';
+echo ' Numerio 2 yra: ' . $count2. '<br>';
