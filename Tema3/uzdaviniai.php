@@ -53,8 +53,78 @@ for($number = 1; $number <= 3000; $number++) {
 
 echo '<br>';
 
-for($row1 = 0; $row1 <= 100; $row1++) {
-    for($row2 = 0; $row2 <= 100; $row2++) {
+for($row1 = 0; $row1 < 100; $row1++) {
+    for($row2 = 0; $row2 < 100; $row2++) {
+        echo '<span>*</span>';
 }
-    echo '*';
+    echo '<br>';
 }
+
+?>
+
+                UZDAVINYS 5
+
+                <?php
+echo '<br>';
+
+echo '<h4>a)</4h>';
+
+while(0 < 1) {
+    if(rand(0, 1) == 0) {
+        
+        echo 'H';
+        
+        break;
+   
+    } else {
+        
+        echo 'S';
+        
+    }
+}
+
+echo '<br>';
+
+echo '<h4>b)</h4>';
+
+while(0 < 1) {
+    if(rand(0, 1) == 0) {
+        
+        echo 'H';
+        
+        break;
+   
+    } else {
+        
+        echo 'S';
+        
+    }
+}
+
+echo '<br>';
+
+echo '<h4>c)</h4>';
+
+$skaicius = 0;
+
+while(0 < 1) {
+    if(rand(0, 1) == 0) {
+        
+        echo 'H';
+        
+        $skaicius++;
+   
+    } else {
+        
+        echo 'S';
+        
+    } if($skaicius ==3) {
+        break;
+} 
+    
+}
+
+
+
+
+?>
