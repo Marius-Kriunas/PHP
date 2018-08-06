@@ -76,10 +76,6 @@ while(0 < 1) {
         
         break;
    
-    } else {
-        
-        echo 'S';
-        
     }
 }
 
@@ -88,15 +84,11 @@ echo '<br>';
 echo '<h4>b)</h4>';
 
 while(0 < 1) {
-    if(rand(0, 1) == 0) {
-        
-        echo 'H';
-        
-        break;
-   
-    } else {
+    if(rand(0, 1) == 1) {
         
         echo 'S';
+        
+        break;
         
     }
 }
@@ -128,3 +120,4 @@ while(0 < 1) {
 
 
 ?>
+
