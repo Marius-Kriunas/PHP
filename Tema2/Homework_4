@@ -1,0 +1,15 @@
+<?php
+
+$a = rand(1, 10);
+$b = rand(1, 10);
+$c = rand(1, 10);
+
+echo '<br> a:'.$a.'<br> b: '.$b.'<br> c: '.$c.'<br>';
+
+
+if($a >= $b + $c || $b >= $a + $c || $c >= $a + $b) {
+    echo 'Negalima';
+}
+else {
+    echo 'Galima';
+}
