@@ -15,8 +15,22 @@ class Builder extends ConstructionCompany {
     public function printInfo() {
         $this->printInfoCompany();
         $this->printInfoConstructionCompany();
-        echo 'Programner Skills: '.implode(' - ', $this->skills).'<br>';
-        echo 'Programner name: '.$this->name.'<br>';
+        echo 'Builder Skills: '.implode(' - ', $this->skills).'<br>';
+        echo 'Builder  name: '.$this->name.'<br>';
     
+    }
+
+    public function addSkill($soft) {
+        if(in_array($soft, $this->skills) == false) {
+            $this->skills[] = $soft;
+    
+    }
+    }
+
+    function bankrupt() {
+        parent::bankrupt();
+        $this->name = '';
+        $this->skills = array();
+          
     }
 }
