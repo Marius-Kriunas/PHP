@@ -12,7 +12,7 @@ class SoftwareCompany extends Company {
 
     protected function bankrupt() {
         parent::bankrupt();
-        $this->programmingLanguages = array();
+        $this->programmingLanguages = $lang = [];
      }
 
     protected function printInfoSoftwareCompany() {
