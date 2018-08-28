@@ -10,6 +10,11 @@ class SoftwareCompany extends Company {
         $this->programingLanguages = array_rand(array_flip($this->lang), 3);
     }
 
+    protected function bankrupt() {
+        parent::bankrupt();
+        $this->programmingLanguages = array();
+     }
+
     protected function printInfoSoftwareCompany() {
         echo 'Programing Languages: '.implode(' - ',$this->programingLanguages).'<br>';
     
