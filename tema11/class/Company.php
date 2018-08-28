@@ -8,6 +8,7 @@ class Company {
 public function __construct() {
 
     $this->employees = rand(3,100);
+    $this->turnover = rand(10000,10000000);
     $this->name = $this->generateName();
 
 }
@@ -31,5 +32,10 @@ public function generateName() {
     $randomName .= $characters[rand(0, $charactersLength - 1)];
     }  
     return ucfirst($randomName);
+    }
+
+    protected function bankrupt() {
+        $this->employees = 0;
+        $this->turnover = 0;
     }
 }
