@@ -11,7 +11,7 @@ class ConstructionCompany extends Company {
 
     protected function bankrupt() {
         parent::bankrupt();
-        $this->buildingObjects = array();
+        $this->buildingObjects = $build = [];
      }
 
     protected function printInfoConstructionCompany() {
