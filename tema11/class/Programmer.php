@@ -20,4 +20,20 @@ class Programmer extends SoftwareCompany {
     
     }
     
+    public function addSkill($soft) {
+        if(in_array($soft, $this->programingLanguages) == false) {
+            $this->programingLanguages[] = $soft;
+
+    }
+    if(in_array($soft, $this->skills) == false) {
+        $this->skills[] = $soft;
+
+}
+    }
+
+    function bankrupt() {
+        parent::bankrupt();
+        $this->name = '';
+        $this->skills = array(); 
+    }
 }
