@@ -37,5 +37,7 @@ public function generateName() {
     protected function bankrupt() {
         $this->employees = 0;
         $this->turnover = 0;
+        echo $this->name.' is bankrupt. '.$this->employees.' employees are now unemployed.<br>';
     }
 }
+
